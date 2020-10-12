@@ -109,19 +109,6 @@ html {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 row {
   display: block;
   margin-top: 10px;
@@ -152,7 +139,6 @@ input#phone:valid,
 input#appt:valid {
   color: green;
 }
-
 
 @media (min-width: 600px) {
   /* tablet, landscape iPad, lo-res laptops ands desktops */
@@ -199,4 +185,60 @@ input#appt:valid {
     color: white;
     width: 90%;
   }
+}
+
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+
+  coloum {
+    width: 49%;
+    display: inline-block;
+  }
+
+  .lg-text {
+    font-family: "Roboto", sans-serif;
+    position: absolute;
+    top: 12%;
+    left: 4%;
+    right: auto;
+    margin-left: auto;
+    bottom: auto;
+    width: 56%;
+    font-size: 78px;
+    color: white;
+  }
+
+  .form-container-blured {
+    /* border: 1px solid red; */
+    width: 35%; /* 35vw */
+    height: auto;
+    position: absolute;
+    top: 0;
+    margin: 60px;
+    left: auto;
+    bottom: auto;
+    padding: 0px 30px 30px 40px;
+    right: 0px;
+    background-image: linear-gradient(180deg, #666666, #404040);
+    border-radius: 12px;
+  }
+
+  input,
+  select {
+    margin-top: 10px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid #7b7b7b;
+    color: white;
+    width: 90%;
+  }
+}
+
+.flex {
+  display: inline-flex;
+}
+
+.radio {
+  align-items: baseline;
 }
