@@ -19,7 +19,77 @@
 
     <div class="form-container-blured">
         <div class="form-field-group">
+            <form autocomplete="off" name="covid19" method="POST">
+    <formhead id="error_message" style="display:none;border-bottom: solid 1px red;color: red;">* Error</formhead>
 
+
+<formhead>personal</formhead>
+    <row>
+        <coloum><input type="text" minlength="2" maxlength="10" id="fname" name="fname" placeholder="first name"
+                autofocus /></coloum>
+        <coloum><input type="text" minlength="2" maxlength="10" id="lname" name="lname" placeholder="last name" />
+        </coloum>
+    </row>
+    <row>
+        <coloum class="flex radio">
+            <coloum class="width: 30%;">
+                <label style="color: whitesmoke">gender</label>
+            </coloum>
+            <coloum style="width: 70%">
+                <input id="gender" style="width: auto" type="radio" name="gender" value="male" required />
+                <label>male</label>
+                <input id="gender" style="width: auto" type="radio" name="gender" value="female" required />
+                <label>female</label>
+            </coloum>
+        </coloum>
+
+        <coloum class="flex radio">
+            <coloum style="width: 25%">
+                <label style="color: whitesmoke">dob</label>
+            </coloum>
+            <coloum style="width: 75%">
+                <input type="date" id="dob" name="dob" required />
+            </coloum>
+        </coloum>
+    </row>
+
+    <row>
+        <coloum><input id="email" name="email" type="email" placeholder="email" required /></coloum>
+        <coloum><input id="phone" name="phone" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                placeholder="phone (123-456-7890)" maxlength="12" required /></coloum>
+    </row>
+
+    <!-- style="border-bottom: 1px solid red;" -->
+    <row>
+        <coloum><input type="text" id="address" name="address" placeholder="address" required /></coloum>
+
+        <coloum><input type="text" id="city" name="city" placeholder="city" required /></coloum>
+    </row>
+
+    <row>
+        <coloum><input id="province" name="province" type="text" placeholder="province" required /></coloum>
+        <coloum><input id="countrycode" name="countrycode" type="text" style="text-transform:uppercase"
+                pattern="[A-Za-z]{3}" placeholder="country code eg. usa " required></coloum>
+    </row>
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+    <row style="margin-top: 20px">
+        <button id="submit" onclick="validateForm()" name="submit" type="submit">Register</button>
+    </row>
+</form>
 
         </div>
     </div>
