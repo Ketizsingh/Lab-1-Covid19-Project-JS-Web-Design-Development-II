@@ -12,3 +12,85 @@ function titleCase(str) {
   }
   return str.join(' ');
 }
+
+function validateForm() {
+  /* document.covid19['tel'].reportValidity();
+  error_logg('fdsf'); */
+
+  const fname = document.getElementById("fname");
+  const lname = document.getElementById("lname");
+  const emailaddress = document.getElementById("email");
+
+  const phone = document.getElementById("phone");
+  const address = document.getElementById("address");
+  const city = document.getElementById("city");
+  const province = document.getElementById("province");
+  const countrycode = document.getElementById("countrycode");
+
+
+  const alphaonly = /^[a-zA-Z]+$/;
+  if (!fname.value.match(alphaonly)) {
+    error_logg("Please enter only alphabets in First Name");
+    fname.focus();
+    return false;
+  }
+  else if (!lname.value.match(alphaonly)) {
+    error_logg("Please enter only alphabets in Last Name");
+    lname.focus();
+    return false;
+  }
+  else if (!city.value.match(alphaonly)) {
+    error_logg("Please enter only alphabets in City");
+    city.focus();
+    return false;
+  }
+  else if (!province.value.match(alphaonly)) {
+    error_logg("Please enter only alphabets in Province");
+    province.focus();
+    return false;
+  }
+
+
+
+  else if (fname == null || fname == "") {
+    error_logg("Please provide your First Name!");
+    return false;
+  }
+  else if (lname == null || lname == "") {
+    error_logg("Please provide your Last Name!");
+    return false;
+  }
+  else if (emailaddress == null || emailaddress == "") {
+    error_logg("Please provide your Email!");
+    return false;
+  }
+  else if (phone == null || phone == "") {
+    error_logg("Please provide your Phone Number!");
+    return false;
+  }
+  else if (address == null || address == "") {
+    error_logg("Please provide your Address!");
+    return false;
+  }
+  else if (city == null || city == "") {
+    error_logg("Please provide City!");
+    return false;
+  }
+  else if (province == null || province == "") {
+    error_logg("Please provide Province!");
+    return false;
+  }
+  else if (countrycode == null || countrycode == "") {
+    error_logg("Please provide Country Code!");
+    return false;
+  }
+
+  else if (phone.length < 10 || phone.length > 12) {
+    error_logg("Write Phone in correct format");
+  }
+  }
+
+
+
+
+

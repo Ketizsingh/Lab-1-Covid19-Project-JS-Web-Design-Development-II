@@ -235,6 +235,14 @@ input#appt:valid {
   }
 }
 
+formhead {
+  display: block;
+  padding: 30px 0px 0px 0px;
+  font-size: 15px;
+  color: white;
+  border-bottom: 2px solid white;
+  width: 95%;
+}
 .flex {
   display: inline-flex;
 }
