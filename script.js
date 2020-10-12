@@ -88,7 +88,38 @@ function validateForm() {
   else if (phone.length < 10 || phone.length > 12) {
     error_logg("Write Phone in correct format");
   }
+  
+
+  const emailIsValid = email => {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
   }
+
+  if (!emailIsValid(emailaddress.value)) {
+    error_logg("Please enter a valid email address.");
+    emailaddress.focus();
+    return false;
+  }
+
+
+
+
+
+  var FS = document.getElementById("FS");
+  if (FS) {
+
+    var files = FS.files;
+
+    if (files.length > 0) {
+      if (files[0].size > 99 * 1024) {
+        FS.setCustomValidity("The selected file must not be larger than 99 kB");
+        return;
+      }
+    }
+    FS.setCustomValidity("");
+  }
+
+  }
+
 
 
 
