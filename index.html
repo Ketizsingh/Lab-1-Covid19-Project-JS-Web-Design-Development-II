@@ -72,6 +72,47 @@
                 pattern="[A-Za-z]{3}" placeholder="country code eg. usa " required></coloum>
     </row>
 
+    <formhead>documents</formhead>
+
+    <row>
+        <coloum style=" width: 100%" class="flex radio">
+            <coloum style="width: 50%">
+                <label style="color: whitesmoke">
+                    booking test name
+                    <span style="font-size: 10px">&#8594;</span></label>
+            </coloum>
+            <coloum style="width: 45%">
+                <input type="text" id="testname" name="testname" value="COVID-19" readonly />
+            </coloum>
+        </coloum>
+    </row>
+    <row>
+        <coloum style="width: 100%" class="flex radio">
+            <coloum style="width: 50%">
+                <label style="color: whitesmoke">
+                    physical activity level
+                    <span style="font-size: 10px">&#8594;</span></label>
+            </coloum>
+            <coloum style="width: 45%">
+                <input type="range" id="pactivity" name="pactivity" style="width: 100%" step="10" min="1" max="100"
+                    name="bigstep" required />
+            </coloum>
+        </coloum>
+    </row>
+
+    <row>
+        <coloum style="width: 100%" class="flex radio">
+            <coloum style="width: 50%">
+                <label style="color: whitesmoke">multiple attachments
+                    <span style="font-size: 10px">&#8594;</span>
+                </label>
+            </coloum>
+
+            <coloum style="width: 50%">
+                <input type="file" id="files" name="files" multiple required />
+            </coloum>
+        </coloum>
+    </row>
 
 
 
