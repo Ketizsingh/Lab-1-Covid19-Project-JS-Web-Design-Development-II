@@ -19,3 +19,54 @@ html {
   /* Microsoft Edge */
   color: #a7a7a7;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+row {
+  display: block;
+  margin-top: 10px;
+}
+
+label {
+  color: #a7a7a7;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+button {
+  background-color: whitesmoke;
+  border: 0px;
+  border-radius: 8px;
+  padding: 8px;
+  font-weight: bolder;
+  margin-left: 40%;
+}
+
+input#phone:invalid,input#appt:invalid {
+  color: red;
+  /* border-bottom: 1px solid red; */
+}
+
+input#phone:valid,input#appt:valid {
+  color: green;
+}
