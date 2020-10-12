@@ -4,7 +4,6 @@ html {
   font-family: "Rubik", sans-serif;
 }
 
-
 ::placeholder {
   color: #a7a7a7;
   opacity: 1; /* Firefox */
@@ -20,27 +19,41 @@ html {
   color: #a7a7a7;
 }
 
+.wd-image {
+  content: url(world-map.png);
+  /* height: 100%; */
+  position: absolute;
+  top: 10%;
+  left: 9%;
+  width: 40%;
+}
 
+.st-text {
+  font-family: "Roboto", sans-serif;
+  position: absolute;
+  top: 22%;
+  left: 13%;
+  width: 56%;
+  font-size: 48px;
+  color: white;
+}
 
+.bg-image {
+  background-image: url("background.jpg");
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  height: 100%;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-size: cover;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  webkit-transform: scale(1.09);
+  -moz-transform: scale(1.09);
+  -o-transform: scale(1.09);
+  -ms-transform: scale(1.09);
+  transform: scale(1.09);
+}
 
 row {
   display: block;
@@ -62,11 +75,13 @@ button {
   margin-left: 40%;
 }
 
-input#phone:invalid,input#appt:invalid {
+input#phone:invalid,
+input#appt:invalid {
   color: red;
   /* border-bottom: 1px solid red; */
 }
 
-input#phone:valid,input#appt:valid {
+input#phone:valid,
+input#appt:valid {
   color: green;
 }
